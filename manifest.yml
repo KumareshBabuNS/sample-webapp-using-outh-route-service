@@ -1,7 +1,11 @@
 ---
 applications:
-- name: sample-route-service-app
-  memory: 512M
+- name: oauth-route-service-app
+  memory: 768M
   instances: 1
-  path: target/sample-route-service-app.jar
+  path: target/sample-webapp-using-outh-route-service-0.0.1-SNAPSHOT.jar
   buildpack: java_buildpack
+  env: 
+    JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE: '{"enabled": "true"}'
+  services:
+    - p-identity
