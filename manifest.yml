@@ -1,0 +1,7 @@
+---
+applications:
+- name: sample-route-service-app
+  memory: 512M
+  instances: 1
+  path: target/sample-route-service-app.jar
+  buildpack: java_buildpack
