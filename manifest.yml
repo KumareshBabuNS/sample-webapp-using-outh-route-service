@@ -1,6 +1,6 @@
 ---
 applications:
-- name: oauth-route-service-app
+- name: oauth-route-sample-app
   memory: 768M
   instances: 1
   path: target/sample-webapp-using-outh-route-service-0.0.1-SNAPSHOT.jar
