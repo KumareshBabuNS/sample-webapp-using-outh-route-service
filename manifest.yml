@@ -7,5 +7,3 @@ applications:
   buildpack: java_buildpack
   env: 
     JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE: '{"enabled": "true"}'
-  services:
-    - p-identity
