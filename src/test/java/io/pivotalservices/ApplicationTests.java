@@ -9,7 +9,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -21,7 +20,7 @@ public class ApplicationTests {
     
     @Test
     public void testSampleController() throws Exception{
-        this.mvc.perform(get("/hello").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk()).andExpect(content().string("hello"));
+        this.mvc.perform(get("/headers").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
     }
 }
